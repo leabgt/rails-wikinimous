@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <div class="banner d-flex justify-content-between">
+      <h3><%= link_to "Wikinimous", articles_path %></h3>
+      <p><%= link_to "New article", new_article_path(@article) %></p>
+    </div>
+    <hr>
     <%= yield %>
   </body>
 </html>
